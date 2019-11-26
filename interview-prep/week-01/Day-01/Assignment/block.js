@@ -1,14 +1,15 @@
-//function scoped
+function getValue(condition) {
 
-for (var i = 0; i < 5; i++) {
-    // console.log(i+"---");
-      setTimeout(function() { console.log(i); }, i * 1000 );
+  if (condition) {
+      var value = "orange";
+     
+      return value;
+  } else {
+
+
+      return value;
   }
-  
-  
-  //block scoped
-  
-  for (let i = 0; i < 5; i++) {
-    // console.log(i+"---");
-      setTimeout(function() { console.log(i); }, i * 1000 );
-  }
+
+}
+console.log(getValue(true))
+console.log(getValue(false))
