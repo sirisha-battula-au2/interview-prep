@@ -1,10 +1,4 @@
-var Car = function() {
-    this.name = 'Audi';
-    this.color = 'blue';
-    this.speed = '180';
-    };
-    ​
-    class Chaining {
+        class Chaining {
         firstMethod() {
           console.log('This is First call');
           return this;
@@ -21,8 +15,8 @@ var Car = function() {
         }
       }
       
-      const chainableInstance = new Chaining();
-      chainableInstance
+      const chainingInst = new Chaining();
+      chainingInst
         .firstMethod()
         .secondMethod()
         .thirdMethod();
