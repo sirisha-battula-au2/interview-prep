@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <body>
 
@@ -24,6 +24,6 @@ function loadXMLDoc() {
   xhttp.send();
 }
 </script>
-
+<!DOCTYPE html>
 </body>
 </html>

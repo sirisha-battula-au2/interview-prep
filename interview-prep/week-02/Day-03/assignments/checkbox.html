@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>CheckBox Example</title>
 </head>
 <body>
         <input type="checkbox"  id="checkbox1">
-    <label for="checkbox1">checkbox1</label> <br>
+    <label for="checkbox1">JAVASCRIPT</label> <br>
 
     <input type="checkbox"  id="checkbox2"> 
-   <label for="checkbox2">checkbox2</label><br>
+   <label for="checkbox2">HTML</label><br>
 
    <input type="checkbox"  id="checkbox3">
-   <label for="checkbox3">checkbox3</label> <br>
+   <label for="checkbox3">React/Redux</label> <br>
 
    <input type="checkbox"  id="checkbox4"> 
-   <label for="checkbox4">checkbox4</label><br>
+   <label for="checkbox4">BOOTSTRAP</label><br>
 
 <input type="checkbox"  id="checkbox5"> 
-<label for="checkbox5">checkbox5</label>
+<label for="checkbox5">MONGODB</label>
 
 <br>
 <br>
@@ -37,32 +37,32 @@
 $(document).ready(function(){
   $("#submit").click(function(){
     if($('#checkbox1').prop('checked')) {
-    console.log("checkbox1")
-    $("#checkvalue1").text("checkbox1 checked")
+    console.log("JAVASCRIPT")
+    $("#checkvalue1").text("JAVASCRIPT Clicked")
 } else {
     $("#checkvalue1").text("")
 }
 if($('#checkbox2').prop('checked')) {
-    console.log("checkbox2")
-    $("#checkvalue2").text("checkbox2 checked")
+    console.log("HTML")
+    $("#checkvalue2").text("HTML clicked")
 } else {
 //   console.log("not")
 $("#checkvalue2").text("")
 }    if($('#checkbox3').prop('checked')) {
-    console.log("checkbox3")
-    $("#checkvalue3").text("checkbox3 checked")
+    console.log("React/Redux")
+    $("#checkvalue3").text("React/Redux clicked")
 } else {
 //   console.log("not")
 $("#checkvalue3").text("")
 }    if($('#checkbox4').prop('checked')) {
-    console.log("checkbox4")
-    $("#checkvalue4").text("checkbox4 checked")
+    console.log("BOOTSTRAP")
+    $("#checkvalue4").text("BOOTSTRAP clicked")
 } else {
 //   console.log("not")
 $("#checkvalue4").text("")
 }    if($('#checkbox5').prop('checked')) {
-    console.log("checkbox5")
-    $("#checkvalue5").text("checkbox5 checked")
+    console.log("MONGODB")
+    $("#checkvalue5").text("MONGODB clicked")
 } else {
 //   console.log("not")
 $("#checkvalue5").text("")

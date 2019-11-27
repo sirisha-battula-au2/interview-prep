@@ -1,20 +1,20 @@
-var obj = {num1:2,num2:3};
 
-var add = function(a,b,c){
-  return this.num1+a+b+c;
-}
-console.log(add.call(obj,1,2,3))
 
-//apply
-var sum=[1,2,3];
-var add2 = function(a,b,c){
-  return this.num1+a+b+c;
-}
-console.log(add2.apply(obj,sum));
+var person1 = {firstName: 'Jon', lastName: 'Kuperman'};
+var person2 = {firstName: 'Kelly', lastName: 'King'};
 
-//bind
-var add3 = function(a,b,c){
-  return this.num2+a+b+c;
+function say(greeting) {
+    console.log(greeting + ' ' + this.firstName + ' ' + this.lastName);
 }
-var bound = add3.bind(obj);
-console.log(bound(1,2,3))
+
+say.call(person1, 'Hello'); // Hello Jon Kuperman
+say.call(person2, 'Hello'); // Hello Kelly King
+
+say.apply(person1, ['Hello']); // Hello Jon Kuperman
+say.apply(person2, ['Hello']); // Hello Kelly King
+
+var sayHelloJon = say.bind(person1);
+var sayHelloKelly = say.bind(person2);
+
+sayHelloJon(); // Hello Jon Kuperman
+sayHelloKelly(); // Hello Kelly King
