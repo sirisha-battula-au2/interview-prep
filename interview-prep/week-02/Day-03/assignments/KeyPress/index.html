@@ -1,0 +1,22 @@
+
+
+<html>
+    <head>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    </head>
+    <body>
+        <h3> Key with jQuery</h3>
+        <label>Enter Text Here </label>
+        <input id="TextBox" type="text" size="38" />
+        <script type="text/javascript">
+            $('#TextBox').keypress(function(event){
+                var keycode = (event.keyCode ? event.keyCode : event.which);
+                if(keycode == '13'){
+                    alert('Pressed "enter" key in textbox');  
+                }
+                event.stopPropagation();
+            });
+             
+        </script>
+    </body>
+</html>

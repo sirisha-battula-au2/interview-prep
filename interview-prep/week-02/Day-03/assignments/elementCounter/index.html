@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Get Number of Paragraphs in a Div</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var matched = $(".content p");
+        alert("Number of paragraphs in content div = " + matched.length);
+    });
+</script>  
+</head> 
+<body>
+    <div class="content">
+        <h1>This is a heading</h1>
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        <div>This is just a block of text.</div>
+        <p>This is one more paragraph.</p>
+    </div>
+</body>
+</html>
