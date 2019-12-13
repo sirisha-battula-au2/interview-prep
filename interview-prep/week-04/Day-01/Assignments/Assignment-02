@@ -1,0 +1,7 @@
+//Delete a member from the cd.members table
+
+delete from cd.members where memid = 37;     
+
+
+
+// output :  member 37 will be Deleted. 
